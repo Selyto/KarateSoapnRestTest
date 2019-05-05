@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>reqres/city2.feature</title>
+<style>body { font-family: monospace, monospace; font-size: small; } table { border-collapse: collapse; } table td { border: 1px solid gray; padding: 0.1em 0.2em; } .scenario-heading { background-color: #F5F28F; padding: 0.2em 0.5em; border-bottom: 1px solid gray; } .scenario-name { font-weight: bold; } .scenario { border: 1px solid gray; margin-bottom: 1em; } .scenario-steps { padding-left: 0.2em; } .scenario-steps-nested { padding-left: 2em; } .step-row { margin: 0.2em 0; } .step-cell { background-color: #92DD96; display: inline-block; width: 85%; padding: 0.2em 0.5em; } .time-cell { background-color: #92DD96; display: inline-block; width: 10%; padding: 0.2em 0.5em; } .failed { background-color: #F2928C; } .skipped { background-color: #8AF; }</style>
+</head>
+<body>
+<div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: </span><span class="scenario-name">Get Cities</span>
+</div>
+<div class="scenario-steps">
+<div class="step-row">
+<div class="step-cell">* url soapurl</div>
+<div class="time-cell">0.03425</div>
+</div>
+<pre>16:48:30.871 INFO  - karate.env system property was: null &#13;
+</pre>
+<div class="step-row">
+<div class="step-cell">Given path '/calculator.asmx'</div>
+<div class="time-cell">0.004474</div>
+</div>
+<div class="step-row">
+<div class="step-cell">When method get</div>
+<div class="time-cell">0.467394</div>
+</div>
+<pre>16:48:30.871 DEBUG - 
+1 &gt; GET http://www.dneonline.com/calculator.asmx
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: www.dneonline.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_191)
+&#13;
+16:48:31.325 DEBUG - 
+1 &lt; 200
+1 &lt; Cache-Control: private, max-age=0
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Date: Sun, 05 May 2019 11:18:15 GMT
+1 &lt; Server: Microsoft-IIS/7.5
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-AspNet-Version: 2.0.50727
+1 &lt; X-Powered-By: ASP.NET
+&#13;
+&#13;
+&lt;html&gt;&#13;
+&#13;
+    &lt;head&gt;&lt;link rel="alternate" type="text/xml" href="/calculator.asmx?disco" /&gt;&#13;
+&#13;
+    &lt;style type="text/css"&gt;&#13;
+    &#13;
+		BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; }&#13;
+		#content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; }&#13;
+		A:link { color: #336699; font-weight: bold; text-decoration: underline; }&#13;
+		A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; }&#13;
+		A:active { color: #336699; font-weight: bold; text-decoration: underline; }&#13;
+		A:hover { color: cc3300; font-weight: bold; text-decoration: underline; }&#13;
+		P { color: #000000; margin-top: 0px; margin-bottom: 12px; font-family: Verdana; }&#13;
+		pre { background-color: #e5e5cc; padding: 5px; font-family: Courier New; font-size: x-small; margin-top: -5px; border: 1px #f0f0e0 solid; }&#13;
+		td { color: #000000; font-family: Verdana; font-size: .7em; }&#13;
+		h2 { font-size: 1.5em; font-weight: bold; margin-top: 25px; margin-bottom: 10px; border-top: 1px solid #003366; margin-left: -15px; color: #003366; }&#13;
+		h3 { font-size: 1.1em; color: #000000; margin-left: -15px; margin-top: 10px; margin-bottom: 10px; }&#13;
+		ul { margin-top: 10px; margin-left: 20px; }&#13;
+		ol { margin-top: 10px; margin-left: 20px; }&#13;
+		li { margin-top: 10px; color: #000000; }&#13;
+		font.value { color: darkblue; font: bold; }&#13;
+		font.key { color: darkgreen; font: bold; }&#13;
+		font.error { color: darkred; font: bold; }&#13;
+		.heading1 { color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal; background-color: #003366; margin-top: 0px; margin-bottom: 0px; margin-left: -30px; padding-top: 10px; padding-bottom: 3px; padding-left: 15px; width: 105%; }&#13;
+		.button { background-color: #dcdcdc; font-family: Verdana; font-size: 1em; border-top: #cccccc 1px solid; border-bottom: #666666 1px solid; border-left: #cccccc 1px solid; border-right: #666666 1px solid; }&#13;
+		.frmheader { color: #000000; background: #dcdcdc; font-family: Verdana; font-size: .7em; font-weight: normal; border-bottom: 1px solid #dcdcdc; padding-top: 2px; padding-bottom: 2px; }&#13;
+		.frmtext { font-family: Verdana; font-size: .7em; margin-top: 8px; margin-bottom: 0px; margin-left: 32px; }&#13;
+		.frmInput { font-family: Verdana; font-size: 1em; }&#13;
+		.intro { margin-left: -15px; }&#13;
+           &#13;
+    &lt;/style&gt;&#13;
+&#13;
+    &lt;title&gt;&#13;
+	Calculator Web Service&#13;
+&lt;/title&gt;&lt;/head&gt;&#13;
+&#13;
+  &lt;body&gt;&#13;
+&#13;
+    &lt;div id="content"&gt;&#13;
+&#13;
+      &lt;p class="heading1"&gt;Calculator&lt;/p&gt;&lt;br&gt;&#13;
+&#13;
+      &#13;
+&#13;
+      &lt;span&gt;&#13;
+&#13;
+          &lt;p class="intro"&gt;The following operations are supported.  For a formal definition, please review the &lt;a href="calculator.asmx?WSDL"&gt;Service Description&lt;/a&gt;. &lt;/p&gt;&#13;
+          &#13;
+          &#13;
+              &lt;ul&gt;&#13;
+            &#13;
+              &lt;li&gt;&#13;
+                &lt;a href="calculator.asmx?op=Add"&gt;Add&lt;/a&gt;&#13;
+                &#13;
+                &lt;span&gt;&#13;
+                  &lt;br&gt;Adds two integers. This is a test WebService. &copy;DNE Online&#13;
+                &lt;/span&gt;&#13;
+              &lt;/li&gt;&#13;
+              &lt;p&gt;&#13;
+            &#13;
+              &lt;li&gt;&#13;
+                &lt;a href="calculator.asmx?op=Divide"&gt;Divide&lt;/a&gt;&#13;
+                &#13;
+                &#13;
+              &lt;/li&gt;&#13;
+              &lt;p&gt;&#13;
+            &#13;
+              &lt;li&gt;&#13;
+                &lt;a href="calculator.asmx?op=Multiply"&gt;Multiply&lt;/a&gt;&#13;
+                &#13;
+                &#13;
+              &lt;/li&gt;&#13;
+              &lt;p&gt;&#13;
+            &#13;
+              &lt;li&gt;&#13;
+                &lt;a href="calculator.asmx?op=Subtract"&gt;Subtract&lt;/a&gt;&#13;
+                &#13;
+                &#13;
+              &lt;/li&gt;&#13;
+              &lt;p&gt;&#13;
+            &#13;
+              &lt;/ul&gt;&#13;
+            &#13;
+      &lt;/span&gt;&#13;
+&#13;
+      &#13;
+      &#13;
+&#13;
+    &lt;span&gt;&#13;
+        &#13;
+    &lt;/span&gt;&#13;
+    &#13;
+      &lt;span&gt;&#13;
+          &lt;hr&gt;&#13;
+          &lt;h3&gt;This web service is using http://tempuri.org/ as its default namespace.&lt;/h3&gt;&#13;
+          &lt;h3&gt;Recommendation: Change the default namespace before the XML Web service is made public.&lt;/h3&gt;&#13;
+          &lt;p class="intro"&gt;Each XML Web service needs a unique namespace in order for client applications to distinguish it from other services on the Web. http://tempuri.org/ is available for XML Web services that are under development, but published XML Web services should use a more permanent namespace.&lt;/p&gt;&#13;
+          &lt;p class="intro"&gt;Your XML Web service should be identified by a namespace that you control. For example, you can use your company's Internet domain name as part of the namespace. Although many XML Web service namespaces look like URLs, they need not point to actual resources on the Web. (XML Web service namespaces are URIs.)&lt;/p&gt;&#13;
+          &lt;p class="intro"&gt;For XML Web services creating using ASP.NET, the default namespace can be changed using the WebService attribute's Namespace property. The WebService attribute is an attribute applied to the class that contains the XML Web service methods. Below is a code example that sets the namespace to "http://microsoft.com/webservices/":&lt;/p&gt;&#13;
+          &lt;p class="intro"&gt;C#&lt;/p&gt;&#13;
+          &lt;pre&gt;[WebService(Namespace="http://microsoft.com/webservices/")]&#13;
+public class MyWebService {&#13;
+    // implementation&#13;
+}&lt;/pre&gt;&#13;
+          &lt;p class="intro"&gt;Visual Basic&lt;/p&gt;&#13;
+          &lt;pre&gt;&amp;lt;WebService(Namespace:="http://microsoft.com/webservices/")&amp;gt; Public Class MyWebService&#13;
+    ' implementation&#13;
+End Class&lt;/pre&gt;&#13;
+&#13;
+          &lt;p class="intro"&gt;C++&lt;/p&gt;&#13;
+          &lt;pre&gt;[WebService(Namespace="http://microsoft.com/webservices/")]&#13;
+public ref class MyWebService {&#13;
+    // implementation&#13;
+};&lt;/pre&gt;&#13;
+          &lt;p class="intro"&gt;For more details on XML namespaces, see the W3C recommendation on &lt;a href="http://www.w3.org/TR/REC-xml-names/"&gt;Namespaces in XML&lt;/A&gt;.&lt;/p&gt;&#13;
+          &lt;p class="intro"&gt;For more details on WSDL, see the &lt;a href="http://www.w3.org/TR/wsdl"&gt;WSDL Specification&lt;/a&gt;.&lt;/p&gt;&#13;
+          &lt;p class="intro"&gt;For more details on URIs, see &lt;a href="http://www.ietf.org/rfc/rfc2396.txt"&gt;RFC 2396&lt;/a&gt;.&lt;/p&gt;&#13;
+      &lt;/span&gt;&#13;
+&#13;
+      &#13;
+&#13;
+    &#13;
+  &lt;/body&gt;&#13;
+&lt;/html&gt;&#13;
+
+&#13;
+16:48:31.325 DEBUG - response time in milliseconds: 454&#13;
+16:48:31.340 WARN  - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 57; columnNumber: 19; The element type "br" must be terminated by the matching end-tag "&lt;/br&gt;".&#13;
+</pre>
+<div class="step-row">
+<div class="step-cell">Then status 200</div>
+<div class="time-cell">0.00039</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
